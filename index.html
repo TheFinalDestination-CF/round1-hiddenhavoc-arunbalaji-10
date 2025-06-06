@@ -590,8 +590,8 @@
                         createSparkles(location);
                         if (treasuresFound === 0) {
                             const scrambled = "qswmtovgkrpnjiadhcfe";
-                            const intermediate = caesarDecode(scrambled, 3); // Outputs: nptjqsludfokmefyabecl
-                            const finalFlag = "CTF{thefinaldestinationkey}"; // Override to required flag
+                            const intermediate = caesarDecode(scrambled, 3); 
+                            const finalFlag = "CTF{thefinaldestinationkey}"; 
                             showMessage('Treasure Unlocked!', `Flag: ${finalFlag}`);
                             console.log("Decoded flag:", finalFlag);
                         }
@@ -609,7 +609,7 @@
                     `;
                     row.style.position = 'relative';
                     row.appendChild(coin);
-                    setTimeout(() => coin.remove(), 500); // Fixed destroy
+                    setTimeout(() => coin.remove(), 500); 
                 });
             });
         });
